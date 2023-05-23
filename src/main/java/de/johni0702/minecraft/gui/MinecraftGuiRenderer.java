@@ -154,7 +154,7 @@ public class MinecraftGuiRenderer implements GuiRenderer {
 
     @Override
     public void drawTexturedRect(int x, int y, int u, int v, int width, int height, int uWidth, int vHeight, int textureWidth, int textureHeight) {
-        color(1, 1, 1);
+        color(0, 0, 0);
         //#if MC>=11600
         DrawableHelper.drawTexture(matrixStack, x, y, width, height, u, v, uWidth, vHeight, textureWidth, textureHeight);
         //#else
@@ -173,7 +173,7 @@ public class MinecraftGuiRenderer implements GuiRenderer {
                 matrixStack,
                 //#endif
                 x, y, x + width, y + height, color);
-        color(1, 1, 1);
+        color(0, 0, 0);
         enableBlend();
     }
 
